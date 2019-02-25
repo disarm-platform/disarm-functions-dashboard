@@ -7,7 +7,7 @@ module.exports = {
     proxy: {
       '^/functions': {
         target: "http://faas.srv.disarm.io/system",
-        headers: {Authorization: 'Basic ' + process.env.OPENFAAS_BASIC_AUTH_HASH}
+        headers: {Authorization: process.env.OPENFAAS_BASIC_AUTH_HEADER}
       }
     }
   }
