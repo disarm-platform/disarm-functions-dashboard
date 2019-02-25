@@ -1,4 +1,6 @@
 [[redirects]]
-  from = "/functions"
-  to = "http://faas.srv.disarm.io/system/functions"
-  headers = {Authorization = 'Basic OPENFAAS_BASIC_AUTH_HASH_PLACEHOLDER'}
+  from = "/functions/*"
+  to = "http://faas.srv.disarm.io/system/functions/:splat"
+  status = 200
+  [redirects.headers]
+    Authorization = 'Basic OPENFAAS_BASIC_AUTH_HASH_PLACEHOLDER'
