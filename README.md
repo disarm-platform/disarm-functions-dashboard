@@ -1,29 +1,9 @@
 # function-dashboard
 
-## Project setup
-```
-npm install
-```
+List out the current functions and their deployment status and related repos.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Set environment variable 'OPENFAAS_BASIC_AUTH_HASH' for both dev and prod. Needs to be a base64-encoded `username:password` pair.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+For Netlify, need to manually interpolate environment variable e.g.: `sed -i s/API_KEY_PLACEHOLDER/$API_KEY/g netlify.toml && npm run build`
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

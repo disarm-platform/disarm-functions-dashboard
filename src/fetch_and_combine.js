@@ -16,7 +16,7 @@ async function fetch_openfaas_functions() {
   //  Make request
   const url = "/functions"
   try {
-    const res = await axios.get(url, {auth: {username, password}})
+    const res = await axios.get(url)
     //  Check response
     if (res.data && res.data.length > 0) {
       return res.data
