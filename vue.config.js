@@ -1,5 +1,5 @@
-if (!process.env.OPENFAAS_BASIC_AUTH_HASH) {
-  console.error('Missing OPENFAAS_BASIC_AUTH_HASH')
+if (!process.env.OPENFAAS_BASIC_AUTH_HEADER) {
+  console.error('Missing OPENFAAS_BASIC_AUTH_HEADER')
 }
 
 module.exports = {
