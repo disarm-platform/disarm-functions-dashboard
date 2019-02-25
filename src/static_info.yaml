@@ -1,20 +1,18 @@
-fn-hotspot-gears:
+- name: fn-hotspot-gears
   repo: https://github.com/disarm-dev/fn-hotspot-gears
   ui: https://disarm.shinyapps.io/ntd-shiny-points/
   uses:
     - "UI for NTD use"
 
-fn-covariate-extractor:
+- name: fn-covariate-extractor
   repo: https://github.com/disarm-platform/fn-covariate-extractor
   uses:
-    -
 
-
-fn-raster-vector-summary-stats:
+- name: fn-raster-vector-summary-stats
   repo: https://github.com/disarm-platform/fn-raster-vector-summary-stats
   uses:
 
-fn-dbscan-cluster:
+- name: fn-dbscan-cluster
   repo: https://github.com/disarm-platform/fn-dbscan-clusterer
   ui:
   uses:
