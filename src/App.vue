@@ -2,28 +2,35 @@
   <div id="app">
     <div v-if="table_data.length === 0">No data</div>
 
-    <table v-else>
-      <thead>
-        <tr>
-          <th>Function name</th>
-          <th>Repository</th>
-          <th>Docker image</th>
-          <th>UI link</th>
-          <th>Used by</th>
-        </tr>
-      </thead>
+    <span v-else>
 
-      <tbody>
-        <tr v-for="line in table_data" :key="line.name">
-          <td><a :href="'http://faas.srv.disarm.io/function/' + line['image']">{{line['image']}}</a></td>
-          <td><a :href="line['repo']">{{line['repo']}}</a></td>
-          <td><a :href="'https://hub.docker.com/r/' + line['image'].split(':')[0]">{{line['image']}}</a></td>
-          <td><a :href="line['ui']">{{line['ui']}}</a></td>
-          <td>{{line['uses'] ? line['uses'].join(' | ') : 'no uses listed'}}</td>
-        </tr>
-      </tbody>
+      <table>
+        <thead>
+          <tr>
+            <th>Function name</th>
+            <th>Repository</th>
+            <th>Docker image</th>
+            <th>UI link</th>
+            <th>Used by</th>
+          </tr>
+        </thead>
 
-    </table>
+        <tbody>
+          <tr v-for="line in table_data" :key="line.name">
+            <td><a :href="'http://faas.srv.disarm.io/function/' + line['image']">{{line['image']}}</a></td>
+            <td><a :href="line['repo']">{{line['repo']}}</a></td>
+            <td><a :href="'https://hub.docker.com/r/' + line['image'].split(':')[0]">{{line['image']}}</a></td>
+            <td><a :href="line['ui']">{{line['ui']}}</a></td>
+            <td>{{line['uses'] ? line['uses'].join(' | ') : 'no uses listed'}}</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+      <div>The data above is combined from the OpenFaas server, and <a href="https://github.com/disarm-platform/functions-dashboard/blob/master/src/static_info.yaml">this static file</a>. </div>
+
+    </span>
+
   </div>
 </template>
 
