@@ -3,5 +3,4 @@
   to = "http://faas.srv.disarm.io/system/functions"
   status = 200
   [redirects.headers]
-    Authorization = 'OPENFAAS_BASIC_AUTH_HEADER_PLACEHOLDER'
     Access-Control-Allow-Origin = '*'
