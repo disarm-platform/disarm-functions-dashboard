@@ -1,5 +1,7 @@
 [[redirects]]
   from = "/functions"
   to = "http://faas.srv.disarm.io/system/functions"
+  status = 200
   [redirects.headers]
     Authorization = 'OPENFAAS_BASIC_AUTH_HEADER'
+    Access-Control-Allow-Origin = '*'
