@@ -1,0 +1,25 @@
+[{
+  "function_name": "fn-raster-vector-summary-stats_0_0_6",
+  "image": "disarm/fn-raster-vector-summary-stats:0.0.6"
+}, {
+  "function_name": "fn-raster-vector-summary-stats_0_0_5",
+  "image": "disarm/fn-raster-vector-summary-stats:0.0.5@sha256:ef349a1805fcbcda14e95a89311902672ef13c8593f0392c9ea0a5fe6d4ea8f4"
+}, {
+  "function_name": "fn-dbscan-clusterer",
+  "image": "disarm/fn-dbscan-clusterer:latest"
+}, {
+  "function_name": "fn-hotspot-gears_0-0-2",
+  "image": "disarm/fn-hotspot-gears:0.0.2"
+}, {
+  "function_name": "fn-raster-vector-summary-stats",
+  "image": "disarm/fn-raster-vector-summary-stats:0.0.6"
+}, {
+  "function_name": "fn-covariate-extractor_0_0_1",
+  "image": "disarm/fn-covariate-extractor:0.0.1"
+}, {
+  "function_name": "fn-hotspot-gears",
+  "image": "disarm/fn-hotspot-gears:0.0.2"
+}, {
+  "function_name": "fn-covariate-extractor",
+  "image": "disarm/fn-covariate-extractor:latest"
+}]

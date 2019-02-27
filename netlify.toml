@@ -1,6 +1,0 @@
-[[redirects]]
-  from = "/functions"
-  to = "http://faas.srv.disarm.io/system/functions"
-  status = 200
-  [redirects.headers]
-    Access-Control-Allow-Origin = '*'
